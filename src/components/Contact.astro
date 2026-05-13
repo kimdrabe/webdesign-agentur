@@ -25,7 +25,10 @@ const { label, title, desc, form_name, form_email, form_message, form_submit, in
     <h2 class="section-title fade-in" data-delay="1">{title}</h2>
     <p class="section-desc fade-in" data-delay="2">{desc}</p>
     <div class="contact-grid">
-      <form class="contact-form fade-in" data-delay="3" action="#" method="POST">
+      <form class="contact-form fade-in" data-delay="3" action="https://formsubmit.co/kimdrabe@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="Neue Kontaktanfrage - NORDMOND Digital">
+        <input type="hidden" name="_template" value="box">
+        <input type="hidden" name="_captcha" value="false">
         <div class="form-group">
           <label for="name">{form_name}</label>
           <input type="text" id="name" name="name" required>
