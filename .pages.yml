@@ -1,0 +1,208 @@
+media: media
+
+content:
+  - name: content
+    label: Seiteninhalt
+    type: file
+    path: _data/content.json
+    fields:
+      - name: site
+        label: Website
+        type: object
+        fields:
+          - name: title
+            label: Titel
+            type: string
+          - name: tagline
+            label: Untertitel
+            type: string
+
+      - name: hero
+        label: Hero-Bereich
+        type: object
+        fields:
+          - name: badge
+            label: Badge
+            type: string
+          - name: headline
+            label: Überschrift
+            type: string
+            editor:
+              type: text
+          - name: subheadline
+            label: Untertitel
+            type: text
+          - name: cta_primary
+            label: CTA-Button
+            type: string
+          - name: cta_secondary
+            label: Zweiter Button
+            type: string
+
+      - name: services
+        label: Leistungen
+        type: object
+        fields:
+          - name: label
+            label: Label
+            type: string
+          - name: title
+            label: Überschrift
+            type: string
+          - name: desc
+            label: Beschreibung
+            type: text
+          - name: list
+            label: Leistungen
+            type: list
+            fields:
+              - name: number
+                label: Nummer
+                type: string
+              - name: title
+                label: Titel
+                type: string
+              - name: desc
+                label: Beschreibung
+                type: text
+
+      - name: about
+        label: Über uns
+        type: object
+        fields:
+          - name: label
+            label: Label
+            type: string
+          - name: title
+            label: Überschrift
+            type: string
+          - name: desc
+            label: Beschreibung
+            type: text
+          - name: stats
+            label: Statistiken
+            type: list
+            fields:
+              - name: number
+                label: Zahl
+                type: string
+              - name: label
+                label: Bezeichnung
+                type: string
+
+      - name: portfolio
+        label: Projekte
+        type: object
+        fields:
+          - name: label
+            label: Label
+            type: string
+          - name: title
+            label: Überschrift
+            type: string
+          - name: desc
+            label: Beschreibung
+            type: text
+          - name: items
+            label: Projekte
+            type: list
+            fields:
+              - name: category
+                label: Kategorie
+                type: string
+              - name: title
+                label: Titel
+                type: string
+              - name: desc
+                label: Beschreibung
+                type: text
+              - name: featured
+                label: Hervorgehoben
+                type: boolean
+
+      - name: process
+        label: Prozess
+        type: object
+        fields:
+          - name: label
+            label: Label
+            type: string
+          - name: title
+            label: Überschrift
+            type: string
+          - name: desc
+            label: Beschreibung
+            type: text
+          - name: steps
+            label: Schritte
+            type: list
+            fields:
+              - name: number
+                label: Nummer
+                type: string
+              - name: title
+                label: Titel
+                type: string
+              - name: desc
+                label: Beschreibung
+                type: text
+
+      - name: contact
+        label: Kontakt
+        type: object
+        fields:
+          - name: label
+            label: Label
+            type: string
+          - name: title
+            label: Überschrift
+            type: string
+          - name: desc
+            label: Beschreibung
+            type: text
+          - name: form_name
+            label: Name-Feld
+            type: string
+          - name: form_email
+            label: E-Mail-Feld
+            type: string
+          - name: form_message
+            label: Nachricht-Feld
+            type: string
+          - name: form_submit
+            label: Senden-Button
+            type: string
+          - name: info
+            label: Kontaktinfos
+            type: list
+            fields:
+              - name: icon
+                label: Icon
+                type: string
+              - name: title
+                label: Titel
+                type: string
+              - name: desc
+                label: Beschreibung
+                type: text
+
+      - name: footer
+        label: Footer
+        type: object
+        fields:
+          - name: brand
+            label: Markenname
+            type: string
+          - name: tagline
+            label: Slogan
+            type: string
+          - name: about
+            label: Beschreibung
+            type: text
+          - name: copyright
+            label: Copyright
+            type: string
+
+settings:
+  locale: de
+  search: true

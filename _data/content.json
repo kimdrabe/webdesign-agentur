@@ -1,0 +1,156 @@
+{
+  "site": {
+    "title": "NORDMOND Digital",
+    "tagline": "Webdesign Agentur"
+  },
+  "nav": [
+    { "label": "Leistungen", "href": "#services" },
+    { "label": "Über uns", "href": "#about" },
+    { "label": "Projekte", "href": "#portfolio" },
+    { "label": "Prozess", "href": "#process" }
+  ],
+  "hero": {
+    "badge": "Seit 2020",
+    "headline": "Wir gestalten digitale Welten, die im Gedächtnis bleiben.",
+    "highlight": "im Gedächtnis bleiben",
+    "subheadline": "Strategisches Webdesign, das Marken zum Leuchten bringt. Wir entwickeln digitale Erlebnisse mit Präzision, Leidenschaft und einem Auge fürs Detail.",
+    "cta_primary": "Projekt starten",
+    "cta_secondary": "Unsere Arbeiten"
+  },
+  "services": {
+    "label": "Leistungen",
+    "title": "Was wir für Sie tun können",
+    "desc": "Von der ersten Idee bis zur fertigen Website – wir begleiten Sie mit ganzheitlichen Lösungen.",
+    "list": [
+      {
+        "number": "01",
+        "title": "Webdesign",
+        "desc": "Maßgeschneiderte Designs mit Fokus auf Ästhetik, Benutzerführung und Konversion. Jedes Pixel sitzt."
+      },
+      {
+        "number": "02",
+        "title": "Entwicklung",
+        "desc": "Sauberer Code, moderne Frameworks und nahtlose Performance. Wir bauen Websites, die unter der Haube genauso überzeugen."
+      },
+      {
+        "number": "03",
+        "title": "Branding",
+        "desc": "Von der Markenstrategie bis zum visuellen Auftritt. Wir formen Identitäten, die Wiedererkennung schaffen."
+      }
+    ]
+  },
+  "about": {
+    "label": "Über uns",
+    "title": "Design mit Haltung und Handwerk",
+    "desc": "Wir sind ein kleines, feines Team aus Designern und Entwicklern mit einer Leidenschaft für außergewöhnliche digitale Erlebnisse. Gegründet in Hamburg, arbeiten wir mit Kunden aus ganz Deutschland und Europa.",
+    "stats": [
+      { "number": "50+", "label": "Projekte realisiert" },
+      { "number": "6", "label": "Jahre Erfahrung" },
+      { "number": "98%", "label": "Kundenzufriedenheit" },
+      { "number": "15+", "label": "Branchen" }
+    ]
+  },
+  "portfolio": {
+    "label": "Projekte",
+    "title": "Ausgewählte Arbeiten",
+    "desc": "Einblicke in Projekte, auf die wir besonders stolz sind.",
+    "items": [
+      {
+        "category": "E-Commerce",
+        "title": "Nordlicht Store",
+        "desc": "Nachhaltiger Mode-Onlineshop mit Fokus auf Storytelling und nahtlosem Checkout.",
+        "featured": true
+      },
+      {
+        "category": "Corporate",
+        "title": "Hansea Finanz",
+        "desc": "Professioneller Webauftritt für eine Hamburger Finanzberatung.",
+        "featured": false
+      },
+      {
+        "category": "Portfolio",
+        "title": "Atelier Sieben",
+        "desc": "Kreative Portfolio-Seite für ein interdisziplinäres Designstudio.",
+        "featured": false
+      },
+      {
+        "category": "SaaS",
+        "title": "Flowtrack",
+        "desc": "Dashboard und Landingpage für ein B2B-Startup im Bereich Prozessoptimierung.",
+        "featured": false
+      }
+    ]
+  },
+  "process": {
+    "label": "Prozess",
+    "title": "So arbeiten wir",
+    "desc": "Transparent, strukturiert, zielorientiert – unser bewährter Vier-Schritte-Prozess.",
+    "steps": [
+      {
+        "number": "1",
+        "title": "Kennenlernen",
+        "desc": "Wir analysieren Ihre Ziele, Ihre Zielgruppe und Ihre Wettbewerber – die Basis für alles Weitere."
+      },
+      {
+        "number": "2",
+        "title": "Konzept",
+        "desc": "Wireframes, Sitemaps und ein klares Designkonzept geben Ihrem Projekt ein stabiles Fundament."
+      },
+      {
+        "number": "3",
+        "title": "Design & Code",
+        "desc": "Wir designen und entwickeln parallel – für ein Ergebnis, das aussieht wie aus einem Guss."
+      },
+      {
+        "number": "4",
+        "title": "Launch & Support",
+        "desc": "Nach dem Launch lassen wir Sie nicht allein. Wir stehen Ihnen mit Rat und Tat zur Seite."
+      }
+    ]
+  },
+  "contact": {
+    "label": "Kontakt",
+    "title": "Lassen Sie uns reden",
+    "desc": "Haben Sie ein Projekt im Kopf? Wir freuen uns auf Ihre Nachricht.",
+    "form_name": "Ihr Name",
+    "form_email": "E-Mail-Adresse",
+    "form_message": "Ihre Nachricht",
+    "form_submit": "Nachricht senden",
+    "info": [
+      {
+        "icon": "📍",
+        "title": "Standort",
+        "desc": "Hamburg, Deutschland"
+      },
+      {
+        "icon": "✉️",
+        "title": "E-Mail",
+        "desc": "hallo@nordmond-digital.de"
+      },
+      {
+        "icon": "📞",
+        "title": "Telefon",
+        "desc": "+49 40 12345678"
+      }
+    ]
+  },
+  "footer": {
+    "brand": "NORDMOND",
+    "tagline": "Digital · seit 2020",
+    "about": "Wir gestalten digitale Erlebnisse, die im Gedächtnis bleiben. Mit Leidenschaft für gutes Design und sauberen Code.",
+    "links_title": "Links",
+    "links": [
+      { "label": "Leistungen", "href": "#services" },
+      { "label": "Projekte", "href": "#portfolio" },
+      { "label": "Kontakt", "href": "#contact" },
+      { "label": "Impressum", "href": "#" }
+    ],
+    "social_title": "Social",
+    "social": [
+      { "label": "Instagram", "href": "#" },
+      { "label": "LinkedIn", "href": "#" },
+      { "label": "Dribbble", "href": "#" }
+    ],
+    "copyright": "© 2026 NORDMOND Digital. Alle Rechte vorbehalten."
+  }
+}
