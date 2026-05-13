@@ -1,0 +1,23 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Danke – NORDMOND Digital" description="Nachricht erfolgreich gesendet.">
+  <main style="min-height: 100vh; display: flex; align-items: center; justify-content: center; background: var(--cream); padding: 24px;">
+    <div style="text-align: center; max-width: 500px;">
+      <div style="font-family: var(--font-heading); font-size: 4rem; font-weight: 800; color: var(--red); line-height: 1; margin-bottom: 16px;">
+        &#10003;
+      </div>
+      <h1 style="font-family: var(--font-heading); font-size: 2rem; font-weight: 800; color: var(--blue); margin-bottom: 12px;">
+        Danke für Ihre Nachricht
+      </h1>
+      <p style="font-size: 1.125rem; color: var(--gray); line-height: 1.7; margin-bottom: 32px;">
+        Wir melden uns in Kürze bei Ihnen.
+      </p>
+      <a href="/webdesign-agentur/" class="btn btn-primary">Zurück zur Startseite</a>
+    </div>
+  </main>
+  <script>
+    setTimeout(() => { window.location.href = '/webdesign-agentur/'; }, 4000);
+  </script>
+</BaseLayout>
