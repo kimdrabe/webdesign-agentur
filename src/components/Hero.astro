@@ -1,0 +1,36 @@
+---
+export interface Props {
+  badge: string;
+  headline: string;
+  highlight: string;
+  subheadline: string;
+  cta_primary: string;
+  cta_secondary: string;
+}
+
+const { badge, headline, highlight, subheadline, cta_primary, cta_secondary } = Astro.props;
+---
+
+<section class="hero" id="hero">
+  <div class="hero-geo"></div>
+  <div class="hero-geo-2"></div>
+  <div class="container">
+    <div class="hero-content">
+      <span class="hero-badge fade-in">{badge}</span>
+      <h1 class="fade-in" data-delay="1">
+        {headline.split(highlight).length > 1 ? (
+          <>
+            {headline.split(highlight)[0]}<span class="highlight">{highlight}</span>{headline.split(highlight)[1]}
+          </>
+        ) : (
+          headline
+        )}
+      </h1>
+      <p class="fade-in" data-delay="2">{subheadline}</p>
+      <div class="hero-actions fade-in" data-delay="3">
+        <a href="#contact" class="btn btn-primary">{cta_primary}</a>
+        <a href="#portfolio" class="btn btn-secondary">{cta_secondary}</a>
+      </div>
+    </div>
+  </div>
+</section>

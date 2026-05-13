@@ -4,7 +4,7 @@ content:
   - name: content
     label: Seiteninhalt
     type: file
-    path: _data/content.json
+    path: src/data/content.json
     fields:
       - name: site
         label: Website
@@ -15,6 +15,17 @@ content:
             type: string
           - name: tagline
             label: Untertitel
+            type: string
+
+      - name: nav
+        label: Navigation
+        type: list
+        fields:
+          - name: label
+            label: Text
+            type: string
+          - name: href
+            label: Link
             type: string
 
       - name: hero
@@ -29,6 +40,9 @@ content:
             type: string
             editor:
               type: text
+          - name: highlight
+            label: Hervorgehobenes Wort
+            type: string
           - name: subheadline
             label: Untertitel
             type: text
@@ -199,6 +213,32 @@ content:
           - name: about
             label: Beschreibung
             type: text
+          - name: links_title
+            label: Links-Überschrift
+            type: string
+          - name: links
+            label: Links
+            type: list
+            fields:
+              - name: label
+                label: Text
+                type: string
+              - name: href
+                label: URL
+                type: string
+          - name: social_title
+            label: Social-Überschrift
+            type: string
+          - name: social
+            label: Social Links
+            type: list
+            fields:
+              - name: label
+                label: Text
+                type: string
+              - name: href
+                label: URL
+                type: string
           - name: copyright
             label: Copyright
             type: string

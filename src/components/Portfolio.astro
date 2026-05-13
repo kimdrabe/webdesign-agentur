@@ -1,0 +1,35 @@
+---
+export interface PortfolioItem {
+  category: string;
+  title: string;
+  desc: string;
+  featured: boolean;
+}
+
+export interface Props {
+  label: string;
+  title: string;
+  desc: string;
+  items: PortfolioItem[];
+}
+
+const { label, title, desc, items } = Astro.props;
+---
+
+<section class="portfolio" id="portfolio">
+  <div class="container">
+    <span class="section-label fade-in">{label}</span>
+    <h2 class="section-title fade-in" data-delay="1">{title}</h2>
+    <p class="section-desc fade-in" data-delay="2">{desc}</p>
+    <div class="portfolio-grid">
+      {items.map((item, i) => (
+        <div class:list={['portfolio-item fade-in', { featured: item.featured }]} data-delay={i + 1}>
+          <div class="portfolio-arrow">↗</div>
+          <div class="portfolio-category">{item.category}</div>
+          <div class="portfolio-title">{item.title}</div>
+          <div class="portfolio-desc">{item.desc}</div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

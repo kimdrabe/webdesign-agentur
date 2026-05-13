@@ -1,0 +1,23 @@
+---
+export interface Props {
+  navLinks: { label: string; href: string }[];
+  brand: string;
+}
+
+const { navLinks, brand } = Astro.props;
+---
+
+<nav class="nav" role="navigation" aria-label="Hauptnavigation">
+  <div class="container">
+    <a href="#" class="nav-logo">{brand}<span>.</span></a>
+    <ul class="nav-links">
+      {navLinks.map(link => (
+        <li><a href={link.href}>{link.label}</a></li>
+      ))}
+      <li><a href="#contact" class="nav-cta">Kontakt</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Menü öffnen">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>

@@ -1,0 +1,36 @@
+---
+export interface Stat {
+  number: string;
+  label: string;
+}
+
+export interface Props {
+  label: string;
+  title: string;
+  desc: string;
+  stats: Stat[];
+}
+
+const { label, title, desc, stats } = Astro.props;
+---
+
+<section class="about" id="about">
+  <div class="about-geo"></div>
+  <div class="container">
+    <div class="about-grid">
+      <div class="fade-in-left">
+        <span class="section-label">{label}</span>
+        <h2 class="section-title">{title}</h2>
+        <p class="section-desc">{desc}</p>
+      </div>
+      <div class="about-stats fade-in-right">
+        {stats.map(stat => (
+          <div class="stat">
+            <div class="stat-number">{stat.number}</div>
+            <div class="stat-label">{stat.label}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>

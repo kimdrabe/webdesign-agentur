@@ -1,0 +1,33 @@
+---
+export interface Service {
+  number: string;
+  title: string;
+  desc: string;
+}
+
+export interface Props {
+  label: string;
+  title: string;
+  desc: string;
+  list: Service[];
+}
+
+const { label, title, desc, list } = Astro.props;
+---
+
+<section class="services" id="services">
+  <div class="container">
+    <span class="section-label fade-in">{label}</span>
+    <h2 class="section-title fade-in" data-delay="1">{title}</h2>
+    <p class="section-desc fade-in" data-delay="2">{desc}</p>
+    <div class="services-grid">
+      {list.map((service, i) => (
+        <div class="service-card fade-in" data-delay={i + 1}>
+          <div class="service-number">{service.number}</div>
+          <h3>{service.title}</h3>
+          <p>{service.desc}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

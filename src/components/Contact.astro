@@ -1,0 +1,56 @@
+---
+export interface ContactInfo {
+  icon: string;
+  title: string;
+  desc: string;
+}
+
+export interface Props {
+  label: string;
+  title: string;
+  desc: string;
+  form_name: string;
+  form_email: string;
+  form_message: string;
+  form_submit: string;
+  info: ContactInfo[];
+}
+
+const { label, title, desc, form_name, form_email, form_message, form_submit, info } = Astro.props;
+---
+
+<section class="contact" id="contact">
+  <div class="container">
+    <span class="section-label fade-in">{label}</span>
+    <h2 class="section-title fade-in" data-delay="1">{title}</h2>
+    <p class="section-desc fade-in" data-delay="2">{desc}</p>
+    <div class="contact-grid">
+      <form class="contact-form fade-in" data-delay="3" action="#" method="POST">
+        <div class="form-group">
+          <label for="name">{form_name}</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">{form_email}</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">{form_message}</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">{form_submit}</button>
+      </form>
+      <div class="contact-info fade-in-right" data-delay="3">
+        {info.map(item => (
+          <div class="contact-info-item">
+            <div class="contact-info-icon">{item.icon}</div>
+            <div>
+              <h4>{item.title}</h4>
+              <p>{item.desc}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,58 @@
+---
+export interface FooterLink {
+  label: string;
+  href: string;
+}
+
+export interface Props {
+  brand: string;
+  tagline: string;
+  about: string;
+  links_title: string;
+  links: FooterLink[];
+  social_title: string;
+  social: FooterLink[];
+  copyright: string;
+}
+
+const { brand, tagline, about, links_title, links, social_title, social, copyright } = Astro.props;
+---
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">{brand}<span>.</span></div>
+        <p class="footer-about">{about}</p>
+      </div>
+      <div>
+        <h4>{links_title}</h4>
+        <ul class="footer-links">
+          {links.map(link => (
+            <li><a href={link.href}>{link.label}</a></li>
+          ))}
+        </ul>
+      </div>
+      <div>
+        <h4>{social_title}</h4>
+        <ul class="footer-links">
+          {social.map(s => (
+            <li><a href={s.href}>{s.label}</a></li>
+          ))}
+        </ul>
+      </div>
+      <div>
+        <h4>Kontakt</h4>
+        <ul class="footer-links">
+          <li><a href="mailto:hallo@nordmond-digital.de">hallo@nordmond-digital.de</a></li>
+          <li><a href="tel:+494012345678">+49 40 12345678</a></li>
+          <li><a href="#">Hamburg, Deutschland</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>{copyright}</span>
+      <span>{tagline}</span>
+    </div>
+  </div>
+</footer>
