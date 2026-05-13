@@ -4,10 +4,26 @@
     "tagline": "Webdesign Agentur"
   },
   "nav": [
-    { "label": "Leistungen", "href": "#services" },
-    { "label": "Über uns", "href": "#about" },
-    { "label": "Projekte", "href": "#portfolio" },
-    { "label": "Prozess", "href": "#process" }
+    {
+      "label": "Leistungen",
+      "href": "#services"
+    },
+    {
+      "label": "Über uns",
+      "href": "#about"
+    },
+    {
+      "label": "Projekte",
+      "href": "#portfolio"
+    },
+    {
+      "label": "Prozess",
+      "href": "#process"
+    },
+    {
+      "label": "Kuh",
+      "href": "Muh"
+    }
   ],
   "hero": {
     "badge": "Seit 2020",
@@ -44,10 +60,22 @@
     "title": "Design mit Haltung und Handwerk",
     "desc": "Wir sind ein kleines, feines Team aus Designern und Entwicklern mit einer Leidenschaft für außergewöhnliche digitale Erlebnisse. Gegründet in Hamburg, arbeiten wir mit Kunden aus ganz Deutschland und Europa.",
     "stats": [
-      { "number": "50+", "label": "Projekte realisiert" },
-      { "number": "6", "label": "Jahre Erfahrung" },
-      { "number": "98%", "label": "Kundenzufriedenheit" },
-      { "number": "15+", "label": "Branchen" }
+      {
+        "number": "50+",
+        "label": "Projekte realisiert"
+      },
+      {
+        "number": "6",
+        "label": "Jahre Erfahrung"
+      },
+      {
+        "number": "98%",
+        "label": "Kundenzufriedenheit"
+      },
+      {
+        "number": "15+",
+        "label": "Branchen"
+      }
     ]
   },
   "portfolio": {
@@ -140,16 +168,37 @@
     "about": "Wir gestalten digitale Erlebnisse, die im Gedächtnis bleiben. Mit Leidenschaft für gutes Design und sauberen Code.",
     "links_title": "Links",
     "links": [
-      { "label": "Leistungen", "href": "#services" },
-      { "label": "Projekte", "href": "#portfolio" },
-      { "label": "Kontakt", "href": "#contact" },
-      { "label": "Impressum", "href": "#" }
+      {
+        "label": "Leistungen",
+        "href": "#services"
+      },
+      {
+        "label": "Projekte",
+        "href": "#portfolio"
+      },
+      {
+        "label": "Kontakt",
+        "href": "#contact"
+      },
+      {
+        "label": "Impressum",
+        "href": "#"
+      }
     ],
     "social_title": "Social",
     "social": [
-      { "label": "Instagram", "href": "#" },
-      { "label": "LinkedIn", "href": "#" },
-      { "label": "Dribbble", "href": "#" }
+      {
+        "label": "Instagram",
+        "href": "#"
+      },
+      {
+        "label": "LinkedIn",
+        "href": "#"
+      },
+      {
+        "label": "Dribbble",
+        "href": "#"
+      }
     ],
     "copyright": "© 2026 NORDMOND Digital. Alle Rechte vorbehalten."
   }
